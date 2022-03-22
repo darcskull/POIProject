@@ -61,34 +61,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormAddQuestions.cs">
+    <Compile Include="Forms\FormAddQuestions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAddQuestions.Designer.cs">
+    <Compile Include="Forms\FormAddQuestions.Designer.cs">
       <DependentUpon>FormAddQuestions.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMainPage.cs">
+    <Compile Include="Forms\FormMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMainPage.Designer.cs">
+    <Compile Include="Forms\FormMainPage.Designer.cs">
       <DependentUpon>FormMainPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormQuiz.cs">
+    <Compile Include="Forms\FormQuiz.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormQuiz.Designer.cs">
+    <Compile Include="Forms\FormQuiz.Designer.cs">
       <DependentUpon>FormQuiz.cs</DependentUpon>
     </Compile>
+    <Compile Include="Objects\Player.cs" />
+    <Compile Include="Objects\ThreadRun.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Questions.cs" />
-    <EmbeddedResource Include="FormAddQuestions.resx">
+    <Compile Include="Objects\Questions.cs" />
+    <EmbeddedResource Include="Forms\FormAddQuestions.resx">
       <DependentUpon>FormAddQuestions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMainPage.resx">
+    <EmbeddedResource Include="Forms\FormMainPage.resx">
       <DependentUpon>FormMainPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormQuiz.resx">
+    <EmbeddedResource Include="Forms\FormQuiz.resx">
       <DependentUpon>FormQuiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
