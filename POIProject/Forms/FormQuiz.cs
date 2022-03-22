@@ -28,6 +28,12 @@ namespace POIProject
             lastPlayer = new Player();
             setQuestion();
             runThreads();
+
+            Thread.Sleep(1100);
+            textBoxAnswers.Text = textBoxAnswers.Text + Environment.NewLine + "Отпаднал участник: " + lastPlayer.Name
+               + " " + lastPlayer.Age;
+
+            players.Remove(lastPlayer);
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
@@ -55,6 +61,13 @@ namespace POIProject
             {
                 setQuestion();
                 runThreads();
+
+
+                Thread.Sleep(1100);
+                textBoxAnswers.Text = textBoxAnswers.Text + Environment.NewLine + "Отпаднал участник: " + lastPlayer.Name
+               + " " + lastPlayer.Age;
+
+                players.Remove(lastPlayer);
             }
 
         }
@@ -63,13 +76,9 @@ namespace POIProject
         {
             foreach(Player pl in players)
             {
-                ThreadRun.runQuiz(pl, lastPlayer, textBoxAnswers, quizQuestions[counter]);
+               Thread thread = new Thread(()=>ThreadRun.runQuiz(pl, lastPlayer, textBoxAnswers, quizQuestions[counter]));
+                thread.Start();
             }
-
-            textBoxAnswers.Text = textBoxAnswers.Text + Environment.NewLine + "Отпаднал участник: " + lastPlayer.Name 
-                + " " + lastPlayer.Age;
-
-            players.Remove(lastPlayer);
         }
 
         public void setQuestion()
