@@ -36,39 +36,45 @@ namespace POIProject
             // 
             // buttonQuiz
             // 
-            this.buttonQuiz.Location = new System.Drawing.Point(507, 385);
+            this.buttonQuiz.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.buttonQuiz.ForeColor = System.Drawing.Color.Indigo;
+            this.buttonQuiz.Location = new System.Drawing.Point(12, 199);
             this.buttonQuiz.Name = "buttonQuiz";
-            this.buttonQuiz.Size = new System.Drawing.Size(169, 23);
+            this.buttonQuiz.Size = new System.Drawing.Size(200, 23);
             this.buttonQuiz.TabIndex = 2;
             this.buttonQuiz.Text = "Стартиране на Куиз";
-            this.buttonQuiz.UseVisualStyleBackColor = true;
+            this.buttonQuiz.UseVisualStyleBackColor = false;
             this.buttonQuiz.Click += new System.EventHandler(this.buttonQuiz_Click);
             // 
             // buttonAddQuestions
             // 
-            this.buttonAddQuestions.Location = new System.Drawing.Point(43, 385);
+            this.buttonAddQuestions.BackColor = System.Drawing.Color.Beige;
+            this.buttonAddQuestions.ForeColor = System.Drawing.Color.DarkBlue;
+            this.buttonAddQuestions.Location = new System.Drawing.Point(12, 52);
             this.buttonAddQuestions.Name = "buttonAddQuestions";
-            this.buttonAddQuestions.Size = new System.Drawing.Size(174, 23);
+            this.buttonAddQuestions.Size = new System.Drawing.Size(200, 23);
             this.buttonAddQuestions.TabIndex = 3;
             this.buttonAddQuestions.Text = "Добавяне на въпроси";
-            this.buttonAddQuestions.UseVisualStyleBackColor = true;
+            this.buttonAddQuestions.UseVisualStyleBackColor = false;
             this.buttonAddQuestions.Click += new System.EventHandler(this.buttonAddQuestions_Click);
             // 
             // buttonAddPlayers
             // 
-            this.buttonAddPlayers.Location = new System.Drawing.Point(270, 385);
+            this.buttonAddPlayers.BackColor = System.Drawing.Color.LightYellow;
+            this.buttonAddPlayers.Location = new System.Drawing.Point(12, 127);
             this.buttonAddPlayers.Name = "buttonAddPlayers";
-            this.buttonAddPlayers.Size = new System.Drawing.Size(174, 23);
+            this.buttonAddPlayers.Size = new System.Drawing.Size(200, 23);
             this.buttonAddPlayers.TabIndex = 4;
             this.buttonAddPlayers.Text = "Добавяне на участници";
-            this.buttonAddPlayers.UseVisualStyleBackColor = true;
+            this.buttonAddPlayers.UseVisualStyleBackColor = false;
             this.buttonAddPlayers.Click += new System.EventHandler(this.buttonAddPlayers_Click);
             // 
             // FormMainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Khaki;
+            this.ClientSize = new System.Drawing.Size(236, 243);
             this.Controls.Add(this.buttonAddPlayers);
             this.Controls.Add(this.buttonAddQuestions);
             this.Controls.Add(this.buttonQuiz);

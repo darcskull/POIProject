@@ -62,6 +62,10 @@ namespace POIProject
                 textBoxPlayers.Text = "";
                 resetQuestion();
                 MessageBox.Show("Победител - Име: " + players.ElementAt(0).Name + " Години: " + players.ElementAt(0).Age);
+                FormMainPage main = new FormMainPage();
+                this.Hide();
+                main.ShowDialog();
+                this.Close();
             }
             else
             {

@@ -47,16 +47,18 @@ namespace POIProject
             // 
             // buttonBack
             // 
+            this.buttonBack.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.buttonBack.Location = new System.Drawing.Point(12, 479);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
             this.buttonBack.TabIndex = 1;
             this.buttonBack.Text = "Назад";
-            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // textBoxQuestion
             // 
+            this.textBoxQuestion.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBoxQuestion.Location = new System.Drawing.Point(156, 70);
             this.textBoxQuestion.Multiline = true;
             this.textBoxQuestion.Name = "textBoxQuestion";
@@ -65,16 +67,18 @@ namespace POIProject
             // 
             // buttonAddQuestion
             // 
+            this.buttonAddQuestion.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.buttonAddQuestion.Location = new System.Drawing.Point(668, 470);
             this.buttonAddQuestion.Name = "buttonAddQuestion";
             this.buttonAddQuestion.Size = new System.Drawing.Size(188, 23);
             this.buttonAddQuestion.TabIndex = 3;
             this.buttonAddQuestion.Text = "Добавяне на въпрос";
-            this.buttonAddQuestion.UseVisualStyleBackColor = true;
+            this.buttonAddQuestion.UseVisualStyleBackColor = false;
             this.buttonAddQuestion.Click += new System.EventHandler(this.buttonAddQuestion_Click);
             // 
             // textBoxA
             // 
+            this.textBoxA.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBoxA.Location = new System.Drawing.Point(156, 218);
             this.textBoxA.Name = "textBoxA";
             this.textBoxA.Size = new System.Drawing.Size(449, 20);
@@ -82,6 +86,7 @@ namespace POIProject
             // 
             // textBoxG
             // 
+            this.textBoxG.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBoxG.Location = new System.Drawing.Point(156, 332);
             this.textBoxG.Name = "textBoxG";
             this.textBoxG.Size = new System.Drawing.Size(449, 20);
@@ -89,6 +94,7 @@ namespace POIProject
             // 
             // textBoxV
             // 
+            this.textBoxV.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBoxV.Location = new System.Drawing.Point(156, 293);
             this.textBoxV.Name = "textBoxV";
             this.textBoxV.Size = new System.Drawing.Size(449, 20);
@@ -96,6 +102,7 @@ namespace POIProject
             // 
             // textBoxB
             // 
+            this.textBoxB.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBoxB.Location = new System.Drawing.Point(156, 256);
             this.textBoxB.Name = "textBoxB";
             this.textBoxB.Size = new System.Drawing.Size(449, 20);
@@ -103,6 +110,7 @@ namespace POIProject
             // 
             // textBoxTrue
             // 
+            this.textBoxTrue.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBoxTrue.Location = new System.Drawing.Point(156, 367);
             this.textBoxTrue.Name = "textBoxTrue";
             this.textBoxTrue.Size = new System.Drawing.Size(449, 20);
@@ -166,6 +174,7 @@ namespace POIProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(868, 514);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -181,6 +190,7 @@ namespace POIProject
             this.Controls.Add(this.buttonAddQuestion);
             this.Controls.Add(this.textBoxQuestion);
             this.Controls.Add(this.buttonBack);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "FormAddQuestions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Добавяне на въпрос";

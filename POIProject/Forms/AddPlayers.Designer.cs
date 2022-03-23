@@ -39,16 +39,18 @@ namespace POIProject.Forms
             // 
             // buttonAdd
             // 
+            this.buttonAdd.BackColor = System.Drawing.Color.MistyRose;
             this.buttonAdd.Location = new System.Drawing.Point(146, 248);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(142, 23);
             this.buttonAdd.TabIndex = 0;
             this.buttonAdd.Text = "Добавяне на участник";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // textBoxName
             // 
+            this.textBoxName.BackColor = System.Drawing.Color.MistyRose;
             this.textBoxName.Location = new System.Drawing.Point(12, 113);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(276, 20);
@@ -65,16 +67,18 @@ namespace POIProject.Forms
             // 
             // buttonBack
             // 
+            this.buttonBack.BackColor = System.Drawing.Color.MistyRose;
             this.buttonBack.Location = new System.Drawing.Point(12, 335);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
             this.buttonBack.TabIndex = 3;
             this.buttonBack.Text = "Назад";
-            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // textBoxAge
             // 
+            this.textBoxAge.BackColor = System.Drawing.Color.MistyRose;
             this.textBoxAge.Location = new System.Drawing.Point(12, 190);
             this.textBoxAge.Name = "textBoxAge";
             this.textBoxAge.Size = new System.Drawing.Size(276, 20);
@@ -93,6 +97,7 @@ namespace POIProject.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(324, 383);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxAge);
@@ -100,6 +105,7 @@ namespace POIProject.Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.buttonAdd);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "AddPlayers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Добавяне на участници";

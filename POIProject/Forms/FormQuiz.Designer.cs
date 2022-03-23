@@ -50,16 +50,18 @@ namespace POIProject
             // 
             // buttonBack
             // 
+            this.buttonBack.BackColor = System.Drawing.Color.GreenYellow;
             this.buttonBack.Location = new System.Drawing.Point(2, 621);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
             this.buttonBack.TabIndex = 0;
             this.buttonBack.Text = "Назад";
-            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // textBoxQuestion
             // 
+            this.textBoxQuestion.BackColor = System.Drawing.Color.SeaShell;
             this.textBoxQuestion.Enabled = false;
             this.textBoxQuestion.Location = new System.Drawing.Point(507, 164);
             this.textBoxQuestion.Multiline = true;
@@ -69,6 +71,7 @@ namespace POIProject
             // 
             // textBoxA
             // 
+            this.textBoxA.BackColor = System.Drawing.Color.SeaShell;
             this.textBoxA.Enabled = false;
             this.textBoxA.Location = new System.Drawing.Point(533, 320);
             this.textBoxA.Name = "textBoxA";
@@ -77,6 +80,7 @@ namespace POIProject
             // 
             // textBoxB
             // 
+            this.textBoxB.BackColor = System.Drawing.Color.SeaShell;
             this.textBoxB.Enabled = false;
             this.textBoxB.Location = new System.Drawing.Point(533, 363);
             this.textBoxB.Name = "textBoxB";
@@ -85,6 +89,7 @@ namespace POIProject
             // 
             // textBoxC
             // 
+            this.textBoxC.BackColor = System.Drawing.Color.SeaShell;
             this.textBoxC.Enabled = false;
             this.textBoxC.Location = new System.Drawing.Point(533, 404);
             this.textBoxC.Name = "textBoxC";
@@ -93,6 +98,7 @@ namespace POIProject
             // 
             // textBoxD
             // 
+            this.textBoxD.BackColor = System.Drawing.Color.SeaShell;
             this.textBoxD.Enabled = false;
             this.textBoxD.Location = new System.Drawing.Point(533, 466);
             this.textBoxD.Name = "textBoxD";
@@ -137,6 +143,7 @@ namespace POIProject
             // 
             // textBoxAnswers
             // 
+            this.textBoxAnswers.BackColor = System.Drawing.Color.SeaShell;
             this.textBoxAnswers.Enabled = false;
             this.textBoxAnswers.Location = new System.Drawing.Point(12, 46);
             this.textBoxAnswers.Multiline = true;
@@ -146,16 +153,18 @@ namespace POIProject
             // 
             // buttonNextQuestion
             // 
+            this.buttonNextQuestion.BackColor = System.Drawing.Color.Gold;
             this.buttonNextQuestion.Location = new System.Drawing.Point(877, 524);
             this.buttonNextQuestion.Name = "buttonNextQuestion";
             this.buttonNextQuestion.Size = new System.Drawing.Size(125, 23);
             this.buttonNextQuestion.TabIndex = 35;
             this.buttonNextQuestion.Text = "Въпрос";
-            this.buttonNextQuestion.UseVisualStyleBackColor = true;
+            this.buttonNextQuestion.UseVisualStyleBackColor = false;
             this.buttonNextQuestion.Click += new System.EventHandler(this.buttonNextQuestion_Click);
             // 
             // textBoxSlowest
             // 
+            this.textBoxSlowest.BackColor = System.Drawing.Color.SeaShell;
             this.textBoxSlowest.Enabled = false;
             this.textBoxSlowest.Location = new System.Drawing.Point(12, 524);
             this.textBoxSlowest.Name = "textBoxSlowest";
@@ -173,6 +182,7 @@ namespace POIProject
             // 
             // textBoxCounter
             // 
+            this.textBoxCounter.BackColor = System.Drawing.Color.SeaShell;
             this.textBoxCounter.Enabled = false;
             this.textBoxCounter.Location = new System.Drawing.Point(477, 164);
             this.textBoxCounter.Name = "textBoxCounter";
@@ -181,6 +191,7 @@ namespace POIProject
             // 
             // textBoxPlayers
             // 
+            this.textBoxPlayers.BackColor = System.Drawing.Color.SeaShell;
             this.textBoxPlayers.Enabled = false;
             this.textBoxPlayers.Location = new System.Drawing.Point(1095, 64);
             this.textBoxPlayers.Multiline = true;
@@ -191,16 +202,19 @@ namespace POIProject
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label5.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.label5.Location = new System.Drawing.Point(1092, 46);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 13);
-            this.label5.TabIndex = 40;
+            this.label5.TabIndex = 60;
             this.label5.Text = "Участници";
             // 
             // FormQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1418, 656);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxPlayers);
