@@ -41,6 +41,11 @@ namespace POIProject
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxAnswers = new System.Windows.Forms.TextBox();
             this.buttonNextQuestion = new System.Windows.Forms.Button();
+            this.textBoxSlowest = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxCounter = new System.Windows.Forms.TextBox();
+            this.textBoxPlayers = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonBack
@@ -65,7 +70,7 @@ namespace POIProject
             // textBoxA
             // 
             this.textBoxA.Enabled = false;
-            this.textBoxA.Location = new System.Drawing.Point(533, 316);
+            this.textBoxA.Location = new System.Drawing.Point(533, 320);
             this.textBoxA.Name = "textBoxA";
             this.textBoxA.Size = new System.Drawing.Size(469, 20);
             this.textBoxA.TabIndex = 2;
@@ -136,7 +141,7 @@ namespace POIProject
             this.textBoxAnswers.Location = new System.Drawing.Point(12, 46);
             this.textBoxAnswers.Multiline = true;
             this.textBoxAnswers.Name = "textBoxAnswers";
-            this.textBoxAnswers.Size = new System.Drawing.Size(355, 535);
+            this.textBoxAnswers.Size = new System.Drawing.Size(355, 409);
             this.textBoxAnswers.TabIndex = 11;
             // 
             // buttonNextQuestion
@@ -145,15 +150,63 @@ namespace POIProject
             this.buttonNextQuestion.Name = "buttonNextQuestion";
             this.buttonNextQuestion.Size = new System.Drawing.Size(125, 23);
             this.buttonNextQuestion.TabIndex = 35;
-            this.buttonNextQuestion.Text = "Следващ въпрос";
+            this.buttonNextQuestion.Text = "Въпрос";
             this.buttonNextQuestion.UseVisualStyleBackColor = true;
             this.buttonNextQuestion.Click += new System.EventHandler(this.buttonNextQuestion_Click);
+            // 
+            // textBoxSlowest
+            // 
+            this.textBoxSlowest.Enabled = false;
+            this.textBoxSlowest.Location = new System.Drawing.Point(12, 524);
+            this.textBoxSlowest.Name = "textBoxSlowest";
+            this.textBoxSlowest.Size = new System.Drawing.Size(355, 20);
+            this.textBoxSlowest.TabIndex = 36;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 508);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(160, 13);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Последен отговорил участник";
+            // 
+            // textBoxCounter
+            // 
+            this.textBoxCounter.Enabled = false;
+            this.textBoxCounter.Location = new System.Drawing.Point(477, 164);
+            this.textBoxCounter.Name = "textBoxCounter";
+            this.textBoxCounter.Size = new System.Drawing.Size(24, 20);
+            this.textBoxCounter.TabIndex = 38;
+            // 
+            // textBoxPlayers
+            // 
+            this.textBoxPlayers.Enabled = false;
+            this.textBoxPlayers.Location = new System.Drawing.Point(1095, 64);
+            this.textBoxPlayers.Multiline = true;
+            this.textBoxPlayers.Name = "textBoxPlayers";
+            this.textBoxPlayers.Size = new System.Drawing.Size(311, 422);
+            this.textBoxPlayers.TabIndex = 39;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(1092, 46);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "Участници";
             // 
             // FormQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1140, 656);
+            this.ClientSize = new System.Drawing.Size(1418, 656);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBoxPlayers);
+            this.Controls.Add(this.textBoxCounter);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxSlowest);
             this.Controls.Add(this.buttonNextQuestion);
             this.Controls.Add(this.textBoxAnswers);
             this.Controls.Add(this.label4);
@@ -169,7 +222,7 @@ namespace POIProject
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormQuiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormQuiz";
+            this.Text = "Киуз";
             this.Load += new System.EventHandler(this.FormQuiz_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -190,5 +243,10 @@ namespace POIProject
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxAnswers;
         private System.Windows.Forms.Button buttonNextQuestion;
+        private System.Windows.Forms.TextBox textBoxSlowest;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxCounter;
+        private System.Windows.Forms.TextBox textBoxPlayers;
+        private System.Windows.Forms.Label label5;
     }
 }
