@@ -1,4 +1,5 @@
-﻿using POIProject.Objects;
+﻿using POIProject.Forms;
+using POIProject.Objects;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,14 +29,15 @@ namespace POIProject
         private void buttonQuiz_Click(object sender, EventArgs e)
         {
             List<Questions> questions = question.readQuestions();
-            List<Player> players = playerHelper.mockData();
-            if (players.Count() > 4)
+            List<Player> players = playerHelper.readPlayers();
+            if (players.Count() > 5)
             {
                 if (questions.Count() > 5)
                 {
                     Questions[] quizQuestions = question.generateQuizQuestions(questions);
+                    List<Player> quizPlayers = playerHelper.generateQuizPlayers(players);
 
-                    FormQuiz formQuiz = new FormQuiz(quizQuestions, players);
+                    FormQuiz formQuiz = new FormQuiz(quizQuestions, quizPlayers);
                     this.Hide();
                     formQuiz.ShowDialog();
                     this.Close();
@@ -52,6 +54,14 @@ namespace POIProject
             FormAddQuestions formQuestions = new FormAddQuestions();
             this.Hide();
             formQuestions.ShowDialog();
+            this.Close();
+        }
+
+        private void buttonAddPlayers_Click(object sender, EventArgs e)
+        {
+            AddPlayers formPlayers = new AddPlayers();
+            this.Hide();
+            formPlayers.ShowDialog();
             this.Close();
         }
     }

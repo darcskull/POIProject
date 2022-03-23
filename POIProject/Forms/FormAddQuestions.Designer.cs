@@ -183,7 +183,7 @@ namespace POIProject
             this.Controls.Add(this.buttonBack);
             this.Name = "FormAddQuestions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "FormAddQuestions";
+            this.Text = "Добавяне на въпрос";
             this.Load += new System.EventHandler(this.FormAddQuestions_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

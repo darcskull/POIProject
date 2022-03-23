@@ -31,6 +31,7 @@ namespace POIProject
         {
             this.buttonQuiz = new System.Windows.Forms.Button();
             this.buttonAddQuestions = new System.Windows.Forms.Button();
+            this.buttonAddPlayers = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonQuiz
@@ -53,16 +54,27 @@ namespace POIProject
             this.buttonAddQuestions.UseVisualStyleBackColor = true;
             this.buttonAddQuestions.Click += new System.EventHandler(this.buttonAddQuestions_Click);
             // 
+            // buttonAddPlayers
+            // 
+            this.buttonAddPlayers.Location = new System.Drawing.Point(270, 385);
+            this.buttonAddPlayers.Name = "buttonAddPlayers";
+            this.buttonAddPlayers.Size = new System.Drawing.Size(174, 23);
+            this.buttonAddPlayers.TabIndex = 4;
+            this.buttonAddPlayers.Text = "Добавяне на участници";
+            this.buttonAddPlayers.UseVisualStyleBackColor = true;
+            this.buttonAddPlayers.Click += new System.EventHandler(this.buttonAddPlayers_Click);
+            // 
             // FormMainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonAddPlayers);
             this.Controls.Add(this.buttonAddQuestions);
             this.Controls.Add(this.buttonQuiz);
             this.Name = "FormMainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Начало";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
@@ -72,6 +84,7 @@ namespace POIProject
 
         private System.Windows.Forms.Button buttonQuiz;
         private System.Windows.Forms.Button buttonAddQuestions;
+        private System.Windows.Forms.Button buttonAddPlayers;
     }
 }
 

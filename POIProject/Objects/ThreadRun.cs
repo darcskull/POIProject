@@ -26,7 +26,7 @@ namespace POIProject.Objects
                 Console.WriteLine(ex.Message);
             }
 
-            WriteTextSafe(Environment.NewLine + player.Name + " отговори " + question.AnswerTrue, textBox);
+            WriteTextSafe(Environment.NewLine + player.Name + " отговори -  " + question.AnswerTrue, textBox);
             WriteLastTextSafe(player.Name, last);
         }
 
